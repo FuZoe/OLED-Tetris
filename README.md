@@ -13,13 +13,13 @@ Details:
    
 3. IO连接关系
    
-OLED SCL  ----  PB12
+   OLED SCL  ----  PB12
 
-OLED SDA  ----  PB13
+   OLED SDA  ----  PB13
 
-left      ----  PA0   
-
-right     ----  PA1
+   left      ----  PA0   
+   
+   right     ----  PA1
 
 down      ----  PA2
 
