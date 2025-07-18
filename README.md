@@ -1,4 +1,4 @@
-#基于STM32的俄罗斯方块游戏
+# 基于STM32的俄罗斯方块游戏
 
 编译器版本：Arm Compiler V5.06 update 7 (build 960) 
 
