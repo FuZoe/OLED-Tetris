@@ -39,7 +39,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "oled12864.h"
-#include "spritebank.h"
+#include "spritebank.h"  
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -255,6 +255,9 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	OLED_Init();
 	Reset_Value_TTRIS();
+	
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -279,6 +282,8 @@ int main(void)
 		
     while (1)
     {
+			// 在此处添加代码以设置PA7为高电平
+			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET); 
       CONTROLE_TTRIS(&Rot_TTRIS);
       if (DROP_BREAK_TTRIS == 6)
       {

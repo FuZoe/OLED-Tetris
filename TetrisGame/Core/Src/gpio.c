@@ -51,6 +51,15 @@ void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12|GPIO_PIN_13, GPIO_PIN_RESET);
+	
+	// **** 添加 PA7 引脚的配置 ****
+  // 首先配置PA7为输出模式
+  GPIO_InitStruct.Pin = GPIO_PIN_7; // 指定PA7引脚
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP; // 设置为推挽输出模式
+  GPIO_InitStruct.Pull = GPIO_NOPULL; // 无需内部上拉或下拉
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW; // 设置输出速度，对于LED低速即可
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct); // 初始化GPIOA的PA7引脚
+  // ******************************
 
   /*Configure GPIO pins : PAPin PAPin PAPin */
   GPIO_InitStruct.Pin = left_key_Pin|right_key_Pin|down_key_Pin;

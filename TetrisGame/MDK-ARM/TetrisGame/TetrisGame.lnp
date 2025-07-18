@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"tetrisgame\startup_stm32f103xb.o"
+"tetrisgame\main.o"
+"tetrisgame\gpio.o"
+"tetrisgame\stm32f1xx_it.o"
+"tetrisgame\stm32f1xx_hal_msp.o"
+"tetrisgame\oled12864.o"
+"tetrisgame\stm32f1xx_hal_gpio_ex.o"
+"tetrisgame\stm32f1xx_hal_tim.o"
+"tetrisgame\stm32f1xx_hal_tim_ex.o"
+"tetrisgame\stm32f1xx_hal.o"
+"tetrisgame\stm32f1xx_hal_rcc.o"
+"tetrisgame\stm32f1xx_hal_rcc_ex.o"
+"tetrisgame\stm32f1xx_hal_gpio.o"
+"tetrisgame\stm32f1xx_hal_dma.o"
+"tetrisgame\stm32f1xx_hal_cortex.o"
+"tetrisgame\stm32f1xx_hal_pwr.o"
+"tetrisgame\stm32f1xx_hal_flash.o"
+"tetrisgame\stm32f1xx_hal_flash_ex.o"
+"tetrisgame\stm32f1xx_hal_exti.o"
+"tetrisgame\system_stm32f1xx.o"
+--strict --scatter "TetrisGame\TetrisGame.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TetrisGame.map" -o TetrisGame\TetrisGame.axf
