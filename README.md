@@ -1,4 +1,4 @@
-Note：对比main分支，本分支修改内容如下：
+**Note**：对比main分支，本分支修改内容如下：
 
 1.修改TetrisGame/Core/Src/oled12864.c的**OLED_Init()**函数
 
