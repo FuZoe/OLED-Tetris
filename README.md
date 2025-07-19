@@ -1,3 +1,10 @@
+Note：对比main分支，本分支修改内容如下：
+
+1.修改TetrisGame/Core/Src/oled12864.c的OLED_Init()函数
+
+2.为PA07引脚添加一个点亮LED灯的电平
+
+
 基于STM32的俄罗斯方块游戏
 
 1. 单片机型号：STM32F103C8T6
