@@ -1,5 +1,7 @@
 # 基于STM32的俄罗斯方块游戏
 
+(Note:如果main分支程序出现OLED屏幕不亮问题，请尝试使用debug分支）
+
 编译器版本：Arm Compiler V5.06 update 7 (build 960) 
 
 （官网下载：https://developer.arm.com/downloads/view/ACOMP5?sortBy=availableBy）
